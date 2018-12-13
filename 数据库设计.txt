@@ -1,0 +1,8 @@
+1.网站设置 CRQ-set
+	title 网站标题 不能为空
+	web_image_icon 网站icon 不可为空
+	web_logo 网站logo 不可为空
+	bg_image 网站主视图 可为空
+	hot_image_1 热点图一 可为空
+	hot_image_2 热点图二 可为空
+	
