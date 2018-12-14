@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/','Index\IndexController@home')->name('home');
+Route::get('/home','Index\IndexController@home')->name('home');
+Route::get('/home1','Index\IndexController@home1')->name('home1');

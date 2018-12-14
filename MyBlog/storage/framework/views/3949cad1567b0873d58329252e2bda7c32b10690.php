@@ -1,5 +1,5 @@
-<footer class="footer row-footer">
-    <div class="col-md-10 offset-md-1">
+<footer class="navbar footer row-footer">
+    <div class="col-md-11">
         <ul class="col-md-12">
             <li><a href="https://github.com/Langshy/Graduation-project.git">GitHub仓库</a></li>
             <li><a href="#">关于作者</a></li>
