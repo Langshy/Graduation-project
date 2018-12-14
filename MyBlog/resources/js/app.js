@@ -31,3 +31,37 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+
+$(function () {
+
+    /* 返回站顶 */
+    $(window).scroll(function() {
+        /* 判断滚动条 距离页面顶部的距离 100可以自定义*/
+        if($(window).scrollTop() > 200) {
+            $("#top").fadeIn(100); /* 这里用.show()也可以 只是效果太丑 */
+        } else {
+            $("#top").fadeOut(100);
+        }
+    });
+
+    $(function () {
+        $('#top').on('click',function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
+        
+        /* search */
+        $('.search-close').on('click',function () {
+            $('#search').fadeOut(500);
+        });
+
+        $('.search').on('click',function () {
+           $('#search').fadeIn(500);
+        });
+    });
+});
+
+

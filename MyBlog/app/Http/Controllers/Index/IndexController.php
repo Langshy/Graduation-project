@@ -12,7 +12,15 @@ class IndexController extends Controller
         return view('Index/static_pages/home');
     }
 
-    public function home1(){
-        return view('Index/static_pages/home1');
+//    public function home1(){
+//        return view('Index/static_pages/home1');
+//    }
+
+    public function tag(){
+        return view('Index/article/class');
+    }
+
+    public function article(){
+        return view('Index/article/info');
     }
 }
