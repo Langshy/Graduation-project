@@ -13956,10 +13956,6 @@ Vue.component('example-component', __webpack_require__(39));
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-var app = new Vue({
-    el: '#app'
-});
-
 $(function () {
 
     /* 返回站顶 */

@@ -2,25 +2,23 @@
 
 namespace App\Http\Controllers\Index;
 
+use App\Model\tag;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Index\webSet;
 
 class IndexController extends Controller
 {
     //
     public function home(){
-        return view('Index/static_pages/home');
+
+        //获取网站设置
+        $webSet = webSet::first();
+
+        //获取主标签
+        $tags = tag::get()->where('tag_showIndex',true)->take(6);
+
+        return view('Index/static_pages/home',compact('webSet','tags'));
     }
 
-//    public function home1(){
-//        return view('Index/static_pages/home1');
-//    }
-
-    public function tag(){
-        return view('Index/article/class');
-    }
-
-    public function article(){
-        return view('Index/article/info');
-    }
 }
