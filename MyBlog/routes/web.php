@@ -14,9 +14,9 @@
 Route::get('/','Index\IndexController@home')->name('home');
 
 
-Route::get('/article','Index\IndexController@article')->name('article');
+//Route::get('/article','Index\IndexController@article')->name('article');
 
-Route::resource('Article','Index\Article');
+Route::resource('/Article','Index\ArticleController');
 
 Route::resource('/Articles/Tag','Index\TagController');
 

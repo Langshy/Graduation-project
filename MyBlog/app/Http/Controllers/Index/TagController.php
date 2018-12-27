@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Index;
 
 use App\Model\Index\webSet;
-use App\Model\tag;
+use App\Model\Tag;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 

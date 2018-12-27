@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\Index;
 
+use App\Model\Article;
+use App\Model\Index\webSet;
+use App\Model\tag;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -44,9 +47,16 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Article $article)
     {
         //
+        //获取网站设置
+        $webSet = webSet::first();
+
+        //获取主标签
+        $tags = tag::get()->where('tag_showIndex',true)->take(6);
+
+        return view('Index/article/info',compact('webSet','tags'));
     }
 
     /**

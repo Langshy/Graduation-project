@@ -13,9 +13,9 @@
             <section class="article col-md-10 offset-md-1">
                 <div class="article-page">
                     <div class="article-image">
-                        <a href="{{route('article')}}"><img src="{{asset('images/bg/003.jpg')}}"></a>
+                        <a href="{{route('Article.show',1)}}"><img src="{{asset('images/bg/003.jpg')}}"></a>
                     </div>
-                    <a href="{{route('article')}}"><p class="article-title">
+                    <a href="{{route('Article.show',1)}}"><p class="article-title">
                         刀剑神域（Sword Art Online）
                     </p></a>
                     <p class="article-content">
@@ -26,7 +26,7 @@
                         <a href="#">发布于 2018-10-19</a>
                     </div>
                     <div class="article-more">
-                        <a href="{{route('article')}}"><img src="{{asset('images/content/more.png')}}"></a>
+                        <a href="{{route('Article.show',1)}}"><img src="{{asset('images/content/more.png')}}"></a>
                     </div>
                     <div class="article-read-info">
                         <img src="{{asset('images/content/see.png')}}">

@@ -1,6 +1,5 @@
 <header class="navbar fixed-top navbar-inverse">
     <div class="col-md-12">
-        <div class="col-md-12">
             <a href="{{route('home')}}" id="logo">{{ $webSet->title}}</a>
             <nav class="navbar navbar-expand-sm float-right">
                 <ul class="navbar-nav">
@@ -16,5 +15,4 @@
                 <img src="{{asset('images/header/search.png')}}" width="24px">
             </div>
         </div>
-    </div>
 </header>
